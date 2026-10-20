@@ -7,8 +7,9 @@ Each folder is one episode and holds the exact plugin built in that video. Every
 | # | Episode | Plugin | What you learn |
 |---|---|---|---|
 | 01 | [How a plugin works](01-how-a-plugin-works/) | `DemoTopBar` | Plugin skeleton, `composer.json`, lifecycle, event subscribers, extending Twig templates, plugin settings |
+| 02 | [Custom entities and the DAL](02-custom-entities-dal/) | `RunioProductFaq` | Migrations, entity definitions and flags, associations, repositories and Criteria, the generated Admin API, storefront snippets |
 
-More episodes are on the way: custom entities and the DAL, an admin module, storefront JavaScript plugins, Store API routes, CMS elements, Flow Builder actions, and scheduled tasks.
+More episodes are on the way: an admin module, storefront JavaScript plugins, Store API routes, CMS elements, Flow Builder actions, and scheduled tasks.
 
 ## Requirements
 
