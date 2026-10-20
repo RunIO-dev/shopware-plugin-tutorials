@@ -1,0 +1,23 @@
+{% sw_extends '@Storefront/storefront/component/product/description.html.twig' %}
+
+{% block component_product_description_content %}
+    {{ parent() }}
+
+    {% set faqs = page.extensions.runioFaqs ?? [] %}
+    {% if faqs|length > 0 %}
+        <div class="runio-faq" data-runio-faq-search>
+            <h3 class="runio-faq-title">{{ 'runioProductFaq.title'|trans|sw_sanitize }}</h3>
+            <input type="search"
+                   class="form-control runio-faq-search-input"
+                   placeholder="{{ 'runioProductFaq.searchPlaceholder'|trans|striptags }}"
+                   aria-label="{{ 'runioProductFaq.searchPlaceholder'|trans|striptags }}">
+            {% for faq in faqs %}
+                <details class="runio-faq-item" {% if loop.first %}open{% endif %}>
+                    <summary class="runio-faq-question">{{ faq.question }}</summary>
+                    <p class="runio-faq-answer">{{ faq.answer }}</p>
+                </details>
+            {% endfor %}
+            <p class="runio-faq-empty" hidden>{{ 'runioProductFaq.noResults'|trans|sw_sanitize }}</p>
+        </div>
+    {% endif %}
+{% endblock %}
