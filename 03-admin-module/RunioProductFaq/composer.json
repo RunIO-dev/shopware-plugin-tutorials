@@ -1,0 +1,46 @@
+{
+    "name": "runio-product-faq/runio-product-faq",
+    "description": "Product FAQs stored in a custom DAL entity",
+    "type": "shopware-platform-plugin",
+    "version": "1.1.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Runio",
+            "homepage": "https://runio.dev"
+        }
+    ],
+    "require": {
+        "shopware/core": "~6.7.0",
+        "shopware/storefront": "~6.7.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "Runio\\ProductFaq\\RunioProductFaq",
+        "label": {
+            "de-DE": "Produkt-FAQ",
+            "en-GB": "Product FAQ"
+        },
+        "description": {
+            "de-DE": "Ergänzt Produkte um Fragen und Antworten mit einer eigenen DAL-Entität und zeigt sie auf der Produktseite. Gebaut in Folge 2 der Runio-Tutorialreihe zur Shopware-Plugin-Entwicklung.",
+            "en-GB": "Adds questions and answers to products with a custom DAL entity, and shows them on the product page. Built in episode 2 of the Runio Shopware plugin tutorial series."
+        },
+        "manufacturerLink": {
+            "de-DE": "https://runio.dev",
+            "en-GB": "https://runio.dev"
+        },
+        "supportLink": {
+            "de-DE": "https://github.com/RunIO-dev/shopware-plugin-tutorials/issues",
+            "en-GB": "https://github.com/RunIO-dev/shopware-plugin-tutorials/issues"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Runio\\ProductFaq\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Runio\\ProductFaq\\Tests\\": "tests/"
+        }
+    }
+}

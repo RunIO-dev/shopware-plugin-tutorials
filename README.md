@@ -8,8 +8,9 @@ Each folder is one episode and holds the exact plugin built in that video. Every
 |---|---|---|---|
 | 01 | [How a plugin works](01-how-a-plugin-works/) | `DemoTopBar` | Plugin skeleton, `composer.json`, lifecycle, event subscribers, extending Twig templates, plugin settings |
 | 02 | [Custom entities and the DAL](02-custom-entities-dal/) | `RunioProductFaq` | Migrations, entity definitions and flags, associations, repositories and Criteria, the generated Admin API, storefront snippets |
+| 03 | [An admin module for your entity](03-admin-module/) | `RunioProductFaq` 1.1 | `Module.register`, routes and navigation, `sw-entity-listing`, Meteor form components, `mapPropertyErrors`, ACL roles, admin build |
 
-More episodes are on the way: an admin module, storefront JavaScript plugins, Store API routes, CMS elements, Flow Builder actions, and scheduled tasks.
+More episodes are on the way: storefront JavaScript plugins, Store API routes, CMS elements, Flow Builder actions, and scheduled tasks.
 
 ## Requirements
 
