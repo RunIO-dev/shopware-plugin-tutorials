@@ -1,0 +1,31 @@
+name: Validate plugins
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    outputs:
+      plugins: ${{ steps.list.outputs.plugins }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: list
+        run: echo "plugins=$(ls -d */*/composer.json | xargs -n1 dirname | jq -Rnc '[inputs]')" >> "$GITHUB_OUTPUT"
+
+  validate:
+    needs: find
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        plugin: ${{ fromJson(needs.find.outputs.plugins) }}
+    name: ${{ matrix.plugin }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shopware/shopware-cli-action@v3
+      - run: shopware-cli extension validate --check-against highest "${{ matrix.plugin }}"

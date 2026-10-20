@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
+    <card>
+        <title>Top bar</title>
+        <title lang="de-DE">Hinweisleiste</title>
+
+        <input-field type="text">
+            <name>text</name>
+            <label>Text</label>
+            <defaultValue>Free shipping on orders over €50</defaultValue>
+        </input-field>
+    </card>
+</config>

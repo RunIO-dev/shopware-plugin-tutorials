@@ -1,0 +1,46 @@
+{
+    "name": "demo-top-bar/demo-top-bar",
+    "description": "Shows a message bar above the storefront header",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Runio",
+            "homepage": "https://runio.dev"
+        }
+    ],
+    "require": {
+        "shopware/core": "~6.7.0",
+        "shopware/storefront": "~6.7.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "Demo\\TopBar\\DemoTopBar",
+        "label": {
+            "de-DE": "Hinweisleiste",
+            "en-GB": "Top bar"
+        },
+        "description": {
+            "de-DE": "Zeigt eine konfigurierbare Hinweisleiste über dem Storefront-Header. Schritt für Schritt in der Runio-Tutorialreihe gebaut, um zu erklären, wie ein Shopware-6-Plugin funktioniert.",
+            "en-GB": "Shows a configurable announcement bar above the storefront header. Built step by step in the Runio tutorial series to explain how a Shopware 6 plugin works."
+        },
+        "manufacturerLink": {
+            "de-DE": "https://runio.dev",
+            "en-GB": "https://runio.dev"
+        },
+        "supportLink": {
+            "de-DE": "https://github.com/RunIO-dev/shopware-plugin-tutorials/issues",
+            "en-GB": "https://github.com/RunIO-dev/shopware-plugin-tutorials/issues"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Demo\\TopBar\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Demo\\TopBar\\Tests\\": "tests/"
+        }
+    }
+}

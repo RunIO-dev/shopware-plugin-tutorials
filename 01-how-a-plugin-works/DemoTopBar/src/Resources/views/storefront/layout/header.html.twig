@@ -1,0 +1,8 @@
+{% sw_extends '@Storefront/storefront/layout/header.html.twig' %}
+
+{% block header %}
+    {% if topBarText %}
+        <div class="demo-top-bar">{{ topBarText }}</div>
+    {% endif %}
+    {{ parent() }}
+{% endblock %}
