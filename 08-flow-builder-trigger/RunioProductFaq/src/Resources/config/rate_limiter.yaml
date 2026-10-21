@@ -1,0 +1,6 @@
+# At most 5 questions per customer and hour
+runio_product_faq_ask:
+    enabled: true
+    policy: 'fixed_window'
+    limit: 5
+    interval: '60 minutes'

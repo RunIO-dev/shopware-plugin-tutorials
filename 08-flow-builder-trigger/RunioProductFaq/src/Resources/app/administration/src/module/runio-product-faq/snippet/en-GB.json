@@ -1,0 +1,48 @@
+{
+    "runio-product-faq": {
+        "general": {
+            "title": "Product FAQ",
+            "description": "Questions and answers shown on product pages"
+        },
+        "list": {
+            "buttonAdd": "Add question",
+            "columnQuestion": "Question",
+            "columnProduct": "Product",
+            "columnPosition": "Position",
+            "columnActive": "Active",
+            "messageDeleteError": "The question could not be deleted."
+        },
+        "detail": {
+            "titleNew": "New question",
+            "cardTitle": "Question",
+            "labelProduct": "Product",
+            "labelQuestion": "Question",
+            "labelAnswer": "Answer",
+            "labelPosition": "Position",
+            "labelActive": "Active",
+            "messageSaveError": "The question could not be saved. Check the highlighted fields.",
+            "messageSaveSuccess": "The question has been saved.",
+            "messageLoadError": "The question could not be loaded.",
+            "helpAnswer": "Questions without an answer stay hidden in the shop, even when active."
+        },
+        "cms": {
+            "label": "Product FAQ",
+            "title": "Frequently asked questions",
+            "empty": "Choose a product in the element settings. On a product page layout, leave it empty to show the questions of that page's product.",
+            "labelProduct": "Product",
+            "helpProduct": "Leave empty on product page layouts to use the product of the page."
+        }
+    },
+    "sw-flow": {
+        "triggers": {
+            "runio": "Runio",
+            "productFaq": "Product FAQ",
+            "asked": "Question asked"
+        }
+    },
+    "global": {
+        "businessEvents": {
+            "runio_product_faq_asked": "Product FAQ: question asked"
+        }
+    }
+}
