@@ -2,7 +2,7 @@
     "name": "runio-product-faq/runio-product-faq",
     "description": "Product FAQs stored in a custom DAL entity",
     "type": "shopware-platform-plugin",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "license": "MIT",
     "authors": [
         {

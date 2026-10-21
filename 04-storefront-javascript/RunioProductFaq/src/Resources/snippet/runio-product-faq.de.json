@@ -1,7 +1,8 @@
 {
     "runioProductFaq": {
         "title": "Häufig gestellte Fragen",
-        "searchPlaceholder": "Fragen durchsuchen...",
-        "noResults": "Keine Frage passt zu deiner Suche."
+        "searchLabel": "Fragen durchsuchen",
+        "noResults": "Keine Frage passt zu deiner Suche.",
+        "status": "%visible% von %total% Fragen passen"
     }
 }
