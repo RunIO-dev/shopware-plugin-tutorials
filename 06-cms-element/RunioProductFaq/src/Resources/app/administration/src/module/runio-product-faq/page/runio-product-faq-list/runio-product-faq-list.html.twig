@@ -1,0 +1,39 @@
+<sw-page class="runio-product-faq-list">
+    <template #smart-bar-header>
+        <h2>{{ $t('runio-product-faq.general.title') }}</h2>
+    </template>
+
+    <template #smart-bar-actions>
+        <mt-button
+            variant="primary"
+            :disabled="!acl.can('runio_product_faq.creator') || undefined"
+            @click="$router.push({ name: 'runio.product.faq.create' })"
+        >
+            {{ $t('runio-product-faq.list.buttonAdd') }}
+        </mt-button>
+    </template>
+
+    <template #content>
+        <sw-entity-listing
+            v-if="faqs"
+            :data-source="faqs"
+            :repository="faqRepository"
+            :columns="columns"
+            :is-loading="isLoading"
+            :show-selection="false"
+            :allow-view="acl.can('runio_product_faq.viewer') || undefined"
+            :allow-edit="acl.can('runio_product_faq.editor') || undefined"
+            :allow-inline-edit="acl.can('runio_product_faq.editor') || undefined"
+            :allow-delete="acl.can('runio_product_faq.deleter') || undefined"
+            detail-route="runio.product.faq.detail"
+            @delete-item-failed="onDeleteFailed"
+        >
+            <template #column-active="{ item }">
+                <sw-data-grid-column-boolean
+                    v-model:value="item.active"
+                    :is-inline-edit="false"
+                />
+            </template>
+        </sw-entity-listing>
+    </template>
+</sw-page>
