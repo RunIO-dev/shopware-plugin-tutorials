@@ -1,0 +1,73 @@
+<sw-page class="runio-product-faq-detail">
+    <template #smart-bar-header>
+        <h2>{{ faq?.question || $t('runio-product-faq.detail.titleNew') }}</h2>
+    </template>
+
+    <template #smart-bar-actions>
+        <mt-button
+            variant="secondary"
+            @click="$router.push({ name: 'runio.product.faq.list' })"
+        >
+            {{ $t('global.default.cancel') }}
+        </mt-button>
+
+        <sw-button-process
+            v-model:process-success="isSaveSuccessful"
+            variant="primary"
+            :is-loading="isLoading"
+            :disabled="!acl.can('runio_product_faq.editor') || undefined"
+            @click.prevent="onSave"
+        >
+            {{ $t('global.default.save') }}
+        </sw-button-process>
+    </template>
+
+    <template #content>
+        <sw-card-view>
+            <mt-card
+                v-if="faq"
+                position-identifier="runio-product-faq-detail"
+                :title="$t('runio-product-faq.detail.cardTitle')"
+                :is-loading="isLoading"
+            >
+                <sw-entity-single-select
+                    v-model:value="faq.productId"
+                    entity="product"
+                    required
+                    :label="$t('runio-product-faq.detail.labelProduct')"
+                    :error="faqProductIdError"
+                    :disabled="!acl.can('runio_product_faq.editor') || undefined"
+                />
+
+                <mt-text-field
+                    v-model="faq.question"
+                    required
+                    :label="$t('runio-product-faq.detail.labelQuestion')"
+                    :error="faqQuestionError"
+                    :disabled="!acl.can('runio_product_faq.editor') || undefined"
+                />
+
+                <mt-textarea
+                    v-model="faq.answer"
+                    :label="$t('runio-product-faq.detail.labelAnswer')"
+                    :help-text="$t('runio-product-faq.detail.helpAnswer')"
+                    :error="faqAnswerError"
+                    :disabled="!acl.can('runio_product_faq.editor') || undefined"
+                />
+
+                <mt-number-field
+                    v-model="faq.position"
+                    number-type="int"
+                    :label="$t('runio-product-faq.detail.labelPosition')"
+                    :disabled="!acl.can('runio_product_faq.editor') || undefined"
+                />
+
+                <mt-switch
+                    v-model="faq.active"
+                    :label="$t('runio-product-faq.detail.labelActive')"
+                    :disabled="!acl.can('runio_product_faq.editor') || undefined"
+                />
+            </mt-card>
+        </sw-card-view>
+    </template>
+</sw-page>

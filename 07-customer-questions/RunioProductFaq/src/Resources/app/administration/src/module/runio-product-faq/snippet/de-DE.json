@@ -1,0 +1,36 @@
+{
+    "runio-product-faq": {
+        "general": {
+            "title": "Produkt-FAQ",
+            "description": "Fragen und Antworten auf Produktseiten"
+        },
+        "list": {
+            "buttonAdd": "Frage hinzufügen",
+            "columnQuestion": "Frage",
+            "columnProduct": "Produkt",
+            "columnPosition": "Position",
+            "columnActive": "Aktiv",
+            "messageDeleteError": "Die Frage konnte nicht gelöscht werden."
+        },
+        "detail": {
+            "titleNew": "Neue Frage",
+            "cardTitle": "Frage",
+            "labelProduct": "Produkt",
+            "labelQuestion": "Frage",
+            "labelAnswer": "Antwort",
+            "labelPosition": "Position",
+            "labelActive": "Aktiv",
+            "messageSaveError": "Die Frage konnte nicht gespeichert werden. Bitte prüfe die markierten Felder.",
+            "messageSaveSuccess": "Die Frage wurde gespeichert.",
+            "messageLoadError": "Die Frage konnte nicht geladen werden.",
+            "helpAnswer": "Fragen ohne Antwort bleiben im Shop verborgen, auch wenn sie aktiv sind."
+        },
+        "cms": {
+            "label": "Produkt-FAQ",
+            "title": "Häufig gestellte Fragen",
+            "empty": "Wähle in den Element-Einstellungen ein Produkt. In einem Layout für Produktseiten leer lassen, dann erscheinen die Fragen des Produkts der Seite.",
+            "labelProduct": "Produkt",
+            "helpProduct": "In Layouts für Produktseiten leer lassen, dann wird das Produkt der Seite verwendet."
+        }
+    }
+}

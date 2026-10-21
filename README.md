@@ -12,8 +12,9 @@ Each folder is one episode and holds the exact plugin built in that video. Every
 | 04 | [A storefront JavaScript plugin](04-storefront-javascript/) | `RunioProductFaq` 1.2 | `PluginBaseClass`, `PluginManager.register`, lazy loading with `import()`, data attributes and options, `$emitter` events, storefront build |
 | 05 | [Your own Store API route](05-store-api-route/) | `RunioProductFaq` 1.3 | Abstract route and decoration, `store-api` route scope, `routes.php`, sales channel repositories and visibility, `ApiAware`, criteria and `includes`, OpenAPI schema |
 | 06 | [A CMS element for Shopping Experiences](06-cms-element/) | `RunioProductFaq` 1.4 | `registerCmsElement`, element component, config and preview, CMS data resolvers, product page layouts, storefront element templates, cache tags and invalidation |
+| 07 | [Customers ask their own questions](07-customer-questions/) | `RunioProductFaq` 1.5 | A second migration, a POST Store API route with login, `DataValidator` and a rate limiter, a storefront controller with flash messages, login redirects |
 
-More episodes are on the way: customers asking their own questions, a Flow Builder trigger, and scheduled tasks.
+More episodes are on the way: a Flow Builder trigger, and scheduled tasks.
 
 ## Requirements
 
