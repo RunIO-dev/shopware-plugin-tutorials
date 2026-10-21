@@ -1,0 +1,8 @@
+{
+    "runioProductFaq": {
+        "title": "Häufig gestellte Fragen",
+        "searchLabel": "Fragen durchsuchen",
+        "noResults": "Keine Frage passt zu deiner Suche.",
+        "status": "%visible% von %total% Fragen passen"
+    }
+}

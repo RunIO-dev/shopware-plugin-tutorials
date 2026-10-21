@@ -1,0 +1,28 @@
+{
+    "runio-product-faq": {
+        "general": {
+            "title": "Produkt-FAQ",
+            "description": "Fragen und Antworten auf Produktseiten"
+        },
+        "list": {
+            "buttonAdd": "Frage hinzufügen",
+            "columnQuestion": "Frage",
+            "columnProduct": "Produkt",
+            "columnPosition": "Position",
+            "columnActive": "Aktiv",
+            "messageDeleteError": "Die Frage konnte nicht gelöscht werden."
+        },
+        "detail": {
+            "titleNew": "Neue Frage",
+            "cardTitle": "Frage",
+            "labelProduct": "Produkt",
+            "labelQuestion": "Frage",
+            "labelAnswer": "Antwort",
+            "labelPosition": "Position",
+            "labelActive": "Aktiv",
+            "messageSaveError": "Die Frage konnte nicht gespeichert werden. Bitte prüfe die markierten Felder.",
+            "messageSaveSuccess": "Die Frage wurde gespeichert.",
+            "messageLoadError": "Die Frage konnte nicht geladen werden."
+        }
+    }
+}

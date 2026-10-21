@@ -1,0 +1,8 @@
+{
+    "runioProductFaq": {
+        "title": "Frequently asked questions",
+        "searchLabel": "Search the questions",
+        "noResults": "No question matches your search.",
+        "status": "%visible% of %total% questions match"
+    }
+}
