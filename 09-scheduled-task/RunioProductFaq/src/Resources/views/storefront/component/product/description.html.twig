@@ -1,0 +1,14 @@
+{% sw_extends '@Storefront/storefront/component/product/description.html.twig' %}
+
+{% block component_product_description_content %}
+    {{ parent() }}
+
+    {% sw_include '@RunioProductFaq/storefront/component/runio-faq/faq-list.html.twig' with {
+        faqs: page.extensions.runioFaqs ?? [],
+        inputId: 'runio-faq-search-' ~ page.product.id,
+    } %}
+
+    {% sw_include '@RunioProductFaq/storefront/component/runio-faq/ask-form.html.twig' with {
+        productId: page.product.id,
+    } %}
+{% endblock %}

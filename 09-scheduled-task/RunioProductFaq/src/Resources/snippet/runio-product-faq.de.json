@@ -1,0 +1,14 @@
+{
+    "runioProductFaq": {
+        "title": "Häufig gestellte Fragen",
+        "searchLabel": "Fragen durchsuchen",
+        "noResults": "Keine Frage passt zu deiner Suche.",
+        "status": "%visible% von %total% Fragen passen",
+        "askLabel": "Keine Antwort gefunden? Frag uns.",
+        "askSubmit": "Frage senden",
+        "askLogin": "Melde dich an, um eine Frage zu stellen",
+        "askSuccess": "Danke! Wir beantworten deine Frage bald.",
+        "askInvalid": "Bitte schreibe deine Frage mit 10 bis 255 Zeichen.",
+        "askTooMany": "Du hast viele Fragen gestellt. Bitte versuche es später noch einmal."
+    }
+}

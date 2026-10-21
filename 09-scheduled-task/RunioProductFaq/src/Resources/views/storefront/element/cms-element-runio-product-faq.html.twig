@@ -1,0 +1,6 @@
+<div class="cms-element-runio-product-faq">
+    {% sw_include '@RunioProductFaq/storefront/component/runio-faq/faq-list.html.twig' with {
+        faqs: element.data ?? [],
+        inputId: 'runio-faq-search-' ~ element.id,
+    } %}
+</div>

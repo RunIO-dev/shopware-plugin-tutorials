@@ -1,0 +1,14 @@
+{
+    "runioProductFaq": {
+        "title": "Frequently asked questions",
+        "searchLabel": "Search the questions",
+        "noResults": "No question matches your search.",
+        "status": "%visible% of %total% questions match",
+        "askLabel": "Didn't find your answer? Ask us.",
+        "askSubmit": "Send question",
+        "askLogin": "Log in to ask a question",
+        "askSuccess": "Thank you! We will answer your question soon.",
+        "askInvalid": "Please write your question in 10 to 255 characters.",
+        "askTooMany": "You asked a lot of questions. Please try again later."
+    }
+}

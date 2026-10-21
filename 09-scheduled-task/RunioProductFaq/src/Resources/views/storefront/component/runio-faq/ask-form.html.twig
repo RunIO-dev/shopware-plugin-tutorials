@@ -1,0 +1,16 @@
+{# Used by the product description. Needs: productId #}
+<div class="runio-faq-ask">
+    {% if context.customer %}
+        <form action="{{ path('frontend.runio.product-faq.ask', { productId: productId }) }}" method="post">
+            <label class="form-label" for="runio-faq-ask-{{ productId }}">{{ 'runioProductFaq.askLabel'|trans|sw_sanitize }}</label>
+            <textarea id="runio-faq-ask-{{ productId }}" class="form-control" name="question"
+                      rows="2" minlength="10" maxlength="255" required></textarea>
+            <button type="submit" class="btn btn-primary mt-2">{{ 'runioProductFaq.askSubmit'|trans|sw_sanitize }}</button>
+        </form>
+    {% else %}
+        <a href="{{ path('frontend.account.login.page', {
+            redirectTo: 'frontend.detail.page',
+            redirectParameters: { productId: productId }|json_encode,
+        }) }}">{{ 'runioProductFaq.askLogin'|trans|sw_sanitize }}</a>
+    {% endif %}
+</div>

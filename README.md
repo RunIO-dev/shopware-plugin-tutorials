@@ -14,8 +14,7 @@ Each folder is one episode and holds the exact plugin built in that video. Every
 | 06 | [A CMS element for Shopping Experiences](06-cms-element/) | `RunioProductFaq` 1.4 | `registerCmsElement`, element component, config and preview, CMS data resolvers, product page layouts, storefront element templates, cache tags and invalidation |
 | 07 | [Customers ask their own questions](07-customer-questions/) | `RunioProductFaq` 1.5 | A second migration, a POST Store API route with login, `DataValidator` and a rate limiter, a storefront controller with flash messages, login redirects |
 | 08 | [A Flow Builder trigger](08-flow-builder-trigger/) | `RunioProductFaq` 1.6 | A `FlowEventAware` event with Aware interfaces, the `BusinessEventCollector`, a mail template type and template from a migration with `ImportTranslationsTrait`, uninstall cleanup |
-
-More episodes are on the way: scheduled tasks.
+| 09 | [A scheduled task](09-scheduled-task/) | `RunioProductFaq` 1.7 | `ScheduledTask` and `ScheduledTaskHandler`, service tags, batched DAL deletes, the clock, plugin configuration with `config.xml` |
 
 ## Requirements
 

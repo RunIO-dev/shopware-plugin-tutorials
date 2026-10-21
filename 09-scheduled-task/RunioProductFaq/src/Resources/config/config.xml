@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
+    <card>
+        <title>Customer questions</title>
+        <title lang="de-DE">Kundenfragen</title>
+
+        <input-field type="int">
+            <name>deleteUnansweredAfterDays</name>
+            <label>Delete unanswered questions after (days)</label>
+            <label lang="de-DE">Unbeantwortete Fragen löschen nach (Tagen)</label>
+            <helpText>A daily task deletes inactive questions without an answer that are older than this. 0 keeps them forever.</helpText>
+            <helpText lang="de-DE">Eine tägliche Aufgabe löscht inaktive Fragen ohne Antwort, die älter sind. 0 behält sie für immer.</helpText>
+            <defaultValue>90</defaultValue>
+            <min>0</min>
+        </input-field>
+    </card>
+</config>
